@@ -1,0 +1,14 @@
+{
+  "5c7246d0-f08b-4dba-84f4-30f2bed08aa4": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "VirtualMachine",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1549898918086,
+    "name": "Context Swap Rate per vCPU",
+    "formula": "max([${this, metric=guest|contextSwapRate_latest},0]) / ${this, metric=config|hardware|num_Cpu}",
+    "description": ""
+  }
+}
